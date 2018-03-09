@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+<g>
+	<polygon id="XMLID_10_" fill="#00C1C1" points="303.996,432.308 135.505,432.308 104.492,358.282 194.615,326.794 112.303,250.006 
+		196.825,173.771 104.492,141.73 135.505,67.44 303.996,67.44 395.4,249.94 	"/>
+	<linearGradient id="XMLID_12_" gradientUnits="userSpaceOnUse" x1="253.8516" y1="175.0605" x2="253.8516" y2="250.8841">
+		<stop  offset="0" style="stop-color:#00C7C7"/>
+		<stop  offset="1" style="stop-color:#00B5B5"/>
+	</linearGradient>
+	<polygon id="XMLID_9_" fill="url(#XMLID_12_)" points="112.303,250.006 395.4,249.94 196.825,173.771 	"/>
+	<linearGradient id="XMLID_13_" gradientUnits="userSpaceOnUse" x1="214.5713" y1="131.2393" x2="260.2267" y2="214.6065">
+		<stop  offset="0" style="stop-color:#009999"/>
+		<stop  offset="1" style="stop-color:#005454"/>
+	</linearGradient>
+	<polygon id="XMLID_8_" fill="url(#XMLID_13_)" points="395.4,249.94 228.866,141.73 104.492,141.73 196.825,173.771 	"/>
+	<linearGradient id="XMLID_14_" gradientUnits="userSpaceOnUse" x1="109.2021" y1="123.126" x2="302.5643" y2="74.006">
+		<stop  offset="0" style="stop-color:#00C7C7"/>
+		<stop  offset="0.3542" style="stop-color:#00C1C1"/>
+		<stop  offset="0.8307" style="stop-color:#00B0B0"/>
+		<stop  offset="1" style="stop-color:#00A8A8"/>
+	</linearGradient>
+	<polygon id="XMLID_7_" fill="url(#XMLID_14_)" points="228.866,141.73 104.492,141.73 135.505,67.44 303.996,67.44 	"/>
+	<linearGradient id="XMLID_15_" gradientUnits="userSpaceOnUse" x1="343.8428" y1="148.8247" x2="313.6155" y2="193.6384">
+		<stop  offset="0.85" style="stop-color:#007878"/>
+		<stop  offset="0.898" style="stop-color:#007272"/>
+		<stop  offset="0.9596" style="stop-color:#006262"/>
+		<stop  offset="1" style="stop-color:#005454"/>
+	</linearGradient>
+	<polygon id="XMLID_6_" fill="url(#XMLID_15_)" points="228.866,141.73 303.996,67.44 395.4,249.94 	"/>
+	<linearGradient id="XMLID_16_" gradientUnits="userSpaceOnUse" x1="312.1328" y1="142.7695" x2="312.1328" y2="253.431">
+		<stop  offset="0" style="stop-color:#006B6B"/>
+		<stop  offset="1" style="stop-color:#007878"/>
+	</linearGradient>
+	<polygon id="XMLID_5_" opacity="0.9" fill="url(#XMLID_16_)" points="395.4,249.94 228.866,249.874 228.866,141.73 	"/>
+	<linearGradient id="XMLID_17_" gradientUnits="userSpaceOnUse" x1="127.9307" y1="375.5596" x2="393.3067" y2="256.3204">
+		<stop  offset="0" style="stop-color:#007878"/>
+		<stop  offset="1" style="stop-color:#005454"/>
+	</linearGradient>
+	<polygon id="XMLID_4_" fill="url(#XMLID_17_)" points="395.4,249.94 228.866,358.149 104.492,358.149 196.825,326.108 	"/>
+	<linearGradient id="XMLID_18_" gradientUnits="userSpaceOnUse" x1="110.0728" y1="364.0977" x2="293.1774" y2="443.3102">
+		<stop  offset="0" style="stop-color:#00C7C7"/>
+		<stop  offset="0.429" style="stop-color:#00B8B8"/>
+		<stop  offset="1" style="stop-color:#00A8A8"/>
+	</linearGradient>
+	<polygon id="XMLID_3_" fill="url(#XMLID_18_)" points="228.866,358.149 104.492,358.149 135.505,432.44 303.996,432.44 	"/>
+	<linearGradient id="XMLID_19_" gradientUnits="userSpaceOnUse" x1="369.1123" y1="388.5195" x2="311.1785" y2="302.6292">
+		<stop  offset="0.85" style="stop-color:#007878"/>
+		<stop  offset="0.898" style="stop-color:#007272"/>
+		<stop  offset="0.9596" style="stop-color:#006262"/>
+		<stop  offset="1" style="stop-color:#005454"/>
+	</linearGradient>
+	<polygon id="XMLID_2_" fill="url(#XMLID_19_)" points="228.866,358.149 303.996,432.44 395.4,249.94 	"/>
+	<polygon id="XMLID_1_" opacity="0.9" fill="#007C7C" points="395.4,249.94 228.866,250.006 228.866,358.149 	"/>
+</g>
+<circle fill="none" cx="250" cy="250" r="250"/>
+</svg>

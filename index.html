@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <meta name="format-detection" content="telephone=no">
+    <!-- -- title -- -->
+    <title>Ozana Buljan - Portfolio</title>
+
+    <!-- CSS  -->
+
+    <!-- -- Materialize -- -->
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+    <!-- -- Fonts and Icons -- -->
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans|Open+Sans+Condensed:300|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Zeyada" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- -- My CSS -- -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- --
+    ********************************************************
+                             References
+    ********************************************************
+    ***************************** CODE *************************
+    ->Contact form to submit a message - needed PHP: https://www.quackit.com/html/codes/html_form_to_email.cfm
+
+    ->MaterializeCSS- framework how-to code snippets: http://materializecss.com/getting-started.html
+
+    ->Shean Stopnik: CSS Donout Charts - Animated - src: https://codepen.io/seanstopnik/pen/GqHng?editors=1100#0
+
+   -> Skills bars: http://designify.me/tutorials/show-off-your-skills-with-css-animated-bars/
+    ***************************** Graphics ***********************
+    ->Vectors    - https://www.freepik.com/
+                 - https://www.flaticon.com
+                 - https://seeklogo.com/
+                 -that temporary meme from somewhere on the Internet (I think imgur)
+         -- -->
+    <!-- --
+     ********************************************************
+                            To do
+    ********************************************************
+             ->Animate logo
+             ->Create Blog Page-Landing
+             ->Create Blog Post Pages
+             ->Fix my texts ->Projects
+                            ->About me
+             ->Maybe check out some more fonts (handwritten)- not too happy about this solution
+             ->FIX BUGS----------------known bugs-----
+                        ->Contact form not linked to my e-mail yet (need some PHP ninja)
+                        ->Skills- donut charts -> when I try to adjust percentage  everything goes wrong
+                        ->Skills-loading bars-> animation not working - jQuery works in my codepen (https://codepen.io/ozana-buljan/pen/YazbxQ) but not here.I've put  a temporary solution but it's only static
+ ******************************************************************
+       -- -->
+</head>
+
+<body>
+    <div class="container">
+
+        <!--HEADER-->
+        <header class="row">
+            <!--navigation-->
+            <nav class="navbar-fixed" role="navigation">
+                <div class="nav-wrapper">
+                    <a id="logo-container" href="#home" class="brand-logo">
+                 <img src="images\logo.svg" class="logo-img" alt="Ozana Buljan logo home">
+                 </a>
+                    <!--on tablet and up-->
+                    <ul class="right hide-on-med-and-down nav-right">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#blog">Journal</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <!--on mobile-->
+                    <div class="over-lay">
+                        <ul id="slide-out" class="side-nav">
+                            <li>
+                                <div class="user-view">
+                                    <div class="background">
+                                        <a id="logo-container" href="#home" class="brand-logo">
+                 <img src="images\logo.svg" class="logo-img" alt="Ozana Buljan logo home">
+                 </a>
+                                    </div>
+
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="background">
+                                    <a id="logo-container" href="#home" class="brand-logo">
+                                    <img src="images\logo.svg" class="logo-img" alt="Ozana Buljan logo home">
+                                </a>
+                                </div>
+                            </li>
+
+                            <li><a class="waves-effect" href="#about">About</a></li>
+                            <li><a class="waves-effect" href="#services">Services</a></li>
+                            <li><a class="waves-effect" href="#work">Work</a></li>
+                            <li><a class="waves-effect" href="#blog">Journal</a></li>
+                            <li><a class="waves-effect" href="#contact">Contact</a></li>
+
+
+                        </ul>
+                    </div>
+                    <a href="#slide-out" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+
+                </div>
+            </nav>
+        </header>
+
+        <!--MAIN-->
+        <main>
+
+            <!--home-->
+            <section id="home" class="card row">
+
+                <h4 class="card col s12 pull-m1 m6 pull-l1 l8 pull-xl1 xl8 center-align">Front end web developer</h4>
+
+
+                <img src="images\logo.svg" class="logo-front col s12 s6 l12 xl12" alt="Ozana Buljan logo">
+                <h1 class="card col s12 offset-m7 m6 push-l5 l8   push-xl5 xl8 right-align">Ozana Buljan</h1>
+                <div class="card arrow col offset-s1 s10 offset-m3 m6 offset-l4 l4 offset-xl4 xl4 center-align">
+                    <a class=" button-down center-align" href="#about">
+                         <i class="material-icons align-center">arrow_downward</i>
+                         </a>
+                </div>
+
+
+
+
+            </section>
+
+            <!--section divider-->
+            <div class="section-divider"></div>
+
+            <!--about-->
+            <section id="about" class="row">
+                <div class="about-title card col s12 m6 l4 xl4 valign-wrapper center-align">
+                    <h2>About</h2>
+                </div>
+                <div id="aboutme" class="about-me-title card col s12 pull-m1 m6 pull-l1 l8 pull-xl1 xl8 center-align">
+                    <h3 class="center-align">Me</h3>
+                </div>
+                <img src="images\avatar.png" alt="avatar" class="avatar circle card col s12 pull-m3 m6 pull-l2 l4 pull-xl2 xl4">
+
+                <div class="about-text col s12 m6 pull-l2 l4 pull-xl2 xl4">
+                    <p>Hello there!</p>
+                    <p> My name is <span>Ozana Buljan</span>. I’m a front end web developer with background in graphic design and online & social media marketing. Originally from Croatia, now an expat in Bregenz, Austria.</p>
+
+                    <p>My unique set of skills could help you (or your business) stand out from the crowd on the Internet!</p>
+                </div>
+                <!--skills-->
+                <section id="skills">
+                    <div class="skills-title  card col s12 pull-m1 m6 pull-l1 l8 pull-xl1 xl8 center-align">
+                        <h3 class="center-align">My Skills</h3>
+                    </div>
+
+                    <div class="skills-content col s12 m6 push-l1 l6 push-xl1 xl6">
+                        <button id="web-dev-skill-button" class="waves-effect waves-light btn grey darken-3 modal-trigger skill-button" href="#web-dev-skill">View Web Dev skills</button>
+                        <a id="design-skill-button" class="waves-effect waves-light btn grey darken-3 modal-trigger skill-button" href="#design-skill">View Design skills</a>
+                        <a id="soft-skill-button" class="waves-effect waves-light btn grey darken-3 modal-trigger skill-button" href="#soft-skill">View Soft skills</a>
+                    </div>
+
+                    <!--web dev skills (off screen)-->
+                    <section id="web-dev-skill" class="modal">
+                        <div class="modal-content">
+                            <h4>Web development skills</h4>
+                            <div class="web-dev-skill-content">
+                                <div class="web-dev-abilities row">
+
+                                    <h5 class="col s12">Programming</h5>
+                                    <div class="d-ability ui-and-web col s12">
+                                        <!--skill:html-->
+                                        <div class="skillbar col s12" data-percent="75%">
+                                            <div class="skillbar-title"><span>HTML</span></div>
+                                            <div class="skillbar-bar html-bar"></div>
+                                            <div class="skill-bar-percent">Intermmediate</div>
+                                        </div>
+                                        <!--skill: css-->
+                                        <div class="skillbar col s12" data-percent="75%">
+                                            <div class="skillbar-title"><span>CSS</span></div>
+                                            <div class="skillbar-bar css-bar"></div>
+                                            <div class="skill-bar-percent">Intermmediate</div>
+                                        </div>
+                                        <!--skill: JS-->
+                                        <div class="skillbar col s12" data-percent="55%">
+                                            <div class="skillbar-title"><span>JavaScript</span></div>
+                                            <div class="skillbar-bar js-bar"></div>
+                                            <div class="skill-bar-percent">Beginner</div>
+                                        </div>
+
+                                        <!--Libraries-->
+                                        <h5 class="col s12">Libraries & Tools</h5>
+                                        <div class="libraries row">
+
+                                            <div class="round col s6 m4 l3 xl2">
+                                                <img src="images\jQuery-Logo.svg" alt="jQuery Icon" class="responsive-img">
+                                            </div>
+                                            <div class="round col s6 m4 l3 xl2">
+                                                <img src="images\github-seeklogo.com.svg" alt="GitHub Icon" class="responsive-img">
+                                            </div>
+                                            <div class="round col s6 m4 l3 xl2">
+                                                <img src="images\git-seeklogo.com.svg" alt="Git Icon" class="responsive-img">
+                                            </div>
+                                            <div class="round col s6 m4 l3 xl2">
+                                                <img src="images\brackets-seeklogo.com.svg" alt="Brackets Icon" class="responsive-img">
+                                            </div>
+                                        </div>
+                                        <!--Frameworks-->
+                                        <h5 class="col s12">Frameworks</h5>
+                                        <div class="frameworks row">
+                                            <div class="round col s6 m4 l3 xl2">
+                                                <img src="images\materialize-seeklogo.com.svg" alt="MaterializeCss Icon" class="responsive-img">
+                                            </div>
+                                            <div class="round col s6 m4 l3 xl2">
+                                                <img src="images\icon-bootstrap.svg" alt="Bootstrap Icon" class="responsive-img">
+                                            </div>
+                                        </div>
+                                        <h5 class="col s12">Optimization</h5>
+                                        <!--skill: UX-->
+                                        <div class="skillbar col s12" data-percent="55%">
+                                            <div class="skillbar-title"><span>UX</span></div>
+                                            <div class="skillbar-bar js-bar"></div>
+                                            <div class="skill-bar-percent">Beginner</div>
+                                        </div>
+
+                                        <!--skill: SEO-->
+                                        <div class="skillbar col s12" data-percent="65%">
+                                            <div class="skillbar-title"><span>SEO</span></div>
+                                            <div class="skillbar-bar seo-bar"></div>
+                                            <div class="skill-bar-percent">Intermmediate</div>
+                                        </div>
+
+                                        <!--CMS Frameworks-->
+                                        <h5 class="col s12">CMS Frameworks</h5>
+                                        <!--skill: CMS-->
+                                        <div class="skillbar col s12" data-percent="85%">
+                                            <div class="skillbar-title"><span>CMS</span></div>
+                                            <div class="skillbar-bar cms-bar"></div>
+                                            <div class="skill-bar-percent">Advanced</div>
+                                        </div>
+                                        <div class="frameworks row">
+                                            <div class="round col s6 m4 l3 xl2">
+                                                <img src="images\Icon wordpress.svg" alt="Wordpress Icon" class="responsive-img">
+                                            </div>
+                                            <div class="round col s6 m4 l3 xl2">
+                                                <img src="images\joomla-seeklogo.com.svg" alt="Joomla Icon" class="responsive-img">
+                                            </div>
+                                            <div class="round col s6 m4 l3 xl2">
+                                                <img src="images\wix-seeklogo.com.svg" alt="Wix Icon" class="responsive-img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Close</a>
+                        </div>
+                    </section>
+                    <!--soft skills (off screen)-->
+                    <section id="soft-skill" class="modal">
+                        <div class="modal-content">
+                            <h4>Soft skills</h4>
+                            <div class="soft-skill-content">
+                                <div class="soft-abilities row">
+                                    <h5 class="col s12">I can</h5>
+                                    <div class="chip col s12 m4 l4 xl3">Write</div>
+                                    <div class="chip col s12 m4 l4 xl3">Communicate</div>
+                                    <div class="chip col s12 m4 l4 xl3">Listen</div>
+                                    <div class="chip col s12 m4 l4 xl3">Quickly adapt</div>
+                                    <div class="chip col s12 m4 l4 xl3">Relentlessly research</div>
+                                    <div class="chip col s12 m4 l4 xl3">Solve problems</div>
+                                    <div class="chip col s12 m4 l4 xl3">Learn fast</div>
+                                    <div class="chip col s12 m4 l4 xl3">Persist</div>
+                                    <div class="chip col s12 m4 l4 xl3">Collaborate</div>
+                                    <div class="chip col s12 m4 l4 xl3">Be a member of a Team</div>
+                                    <div class="chip col s12 m6 l4 xl3">Think critically</div>
+                                </div>
+                                <div class="languages row">
+                                    <h5 class="col s12">I speak</h5>
+
+                                    <div class="lang1 col s4 m4 l4 xl4">
+                                        <div class="donut-chart chart1">
+                                            <div class="quad one "></div>
+                                            <div class="quad two"></div>
+                                            <div class="quad three"></div>
+                                            <div class="quad four"></div>
+                                            <div class="quad top"></div>
+                                            <div class="chart-center">
+                                                <img src="images\Icon CRO.svg" alt="Croatian" class="ai responsive-img">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="lang2 col s4 m4 l4 xl4">
+                                        <div class="donut-chart chart1">
+                                            <div class="quad one "></div>
+                                            <div class="quad two"></div>
+                                            <div class="quad three"></div>
+                                            <div class="quad four"></div>
+                                            <div class="quad top"></div>
+                                            <div class="chart-center">
+                                                <img src="images\Icon ENG.svg" alt="English" class="ai responsive-img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="lang3 col s4 m4 l4 xl4">
+                                        <div class="donut-chart chart1">
+                                            <div class="quad one "></div>
+                                            <div class="quad two"></div>
+                                            <div class="quad three"></div>
+                                            <div class="quad four"></div>
+                                            <div class="quad top"></div>
+                                            <div class="chart-center">
+                                                <img src="images\Icon GER.svg" alt="German" class="ai responsive-img">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Close</a>
+                        </div>
+                    </section>
+                    <!--design skills (off screen)-->
+                    <section id="design-skill" class="modal">
+                        <div class="modal-content">
+                            <h4>Design Skills</h4>
+                            <div class="design-skill-content">
+                                <div class="design-abilities">
+                                    <div class="d-abilities-wrapper row">
+
+                                        <div class="d-ability ui-and-web col s12">
+                                            <div class="skillbar  " data-percent="75%">
+                                                <div class="skillbar-title"><span>UI & Web</span></div>
+                                                <div class="skillbar-bar ui-bar"></div>
+                                                <div class="skill-bar-percent">Intermmediate</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-ability brand col s12">
+                                            <div class="skillbar clearfix " data-percent="70%">
+                                                <div class="skillbar-title"><span>Branding</span></div>
+                                                <div class="skillbar-bar brand-bar"></div>
+                                                <div class="skill-bar-percent">Intermmediate</div>
+                                            </div>
+                                        </div>
+                                        <div class="d-ability print col s12">
+                                            <div class="skillbar clearfix " data-percent="90%">
+                                                <div class="skillbar-title"><span>Print</span></div>
+                                                <div class="skillbar-bar print-bar"></div>
+                                                <div class="skill-bar-percent">Advanced</div>
+                                            </div>
+                                        </div>
+                                        <div class="d-ability illustration col s12">
+                                            <div class="skillbar clearfix " data-percent="85%">
+                                                <div class="skillbar-title"><span>Illustration</span></div>
+                                                <div class="skillbar-bar illust-bar"></div>
+                                                <div class="skill-bar-percent">Advanced</div>
+                                            </div>
+                                        </div>
+                                        <div class="d-ability corp col s12">
+                                            <div class="skillbar clearfix " data-percent="65%">
+                                                <div class="skillbar-title"><span>Corporate</span></div>
+                                                <div class="skillbar-bar corp-bar"></div>
+                                                <div class="skill-bar-percent">Advanced</div>
+                                            </div>
+                                        </div>
+                                        <div class="d-ability mod col s12">
+                                            <div class="skillbar clearfix " data-percent="75%">
+                                                <div class="skillbar-title"><span>3D modelling</span></div>
+                                                <div class="skillbar-bar mod-bar"></div>
+                                                <div class="skill-bar-percent">Intermediate</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="design-tools">
+                                    <div class="d-tools-wrapper row">
+                                        <h5 class="col s12">My tools</h5>
+
+                                        <div class="tool1 col s6 m3 l3 xl3">
+                                            <div class="donut-chart chart1">
+                                                <div class="quad one "></div>
+                                                <div class="quad two"></div>
+                                                <div class="quad three"></div>
+                                                <div class="quad four"></div>
+                                                <div class="quad top"></div>
+                                                <div class="chart-center">
+                                                    <img src="images\Icon PS.svg" alt="Adobe Photoshop Icon" class="ai responsive-img">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tool2 col s6 m3 l3 xl3">
+                                            <div class="donut-chart chart1">
+                                                <div class="quad one "></div>
+                                                <div class="quad two"></div>
+                                                <div class="quad three"></div>
+                                                <div class="quad four"></div>
+                                                <div class="quad top"></div>
+                                                <div class="chart-center">
+                                                    <img src="images\Icon AI.svg" alt="Adobe Illustrator Icon" class="ai responsive-img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tool3 col s6 m3 l3 xl3">
+                                            <div class="donut-chart chart1">
+                                                <div class="quad one "></div>
+                                                <div class="quad two"></div>
+                                                <div class="quad three"></div>
+                                                <div class="quad four"></div>
+                                                <div class="quad top"></div>
+                                                <div class="chart-center">
+                                                    <img src="images\Icon InDesign.svg" alt="Adobe InDesign Icon" class="ai responsive-img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tool4 col s6 m3 l3 xl3">
+                                            <div class="donut-chart chart1">
+                                                <div class="quad one "></div>
+                                                <div class="quad two"></div>
+                                                <div class="quad three"></div>
+                                                <div class="quad four"></div>
+                                                <div class="quad top"></div>
+                                                <div class="chart-center">
+                                                    <img src="images\Icon Muse.svg" alt="Adobe Muse Icon" class="ai responsive-img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tool5 col s6 m3 l3 xl3">
+                                            <div class="donut-chart chart1">
+                                                <div class="quad one "></div>
+                                                <div class="quad two"></div>
+                                                <div class="quad three"></div>
+                                                <div class="quad four"></div>
+                                                <div class="quad top"></div>
+                                                <div class="chart-center">
+                                                    <img src="images\Icon AE.svg" alt="Adobe After Effects Icon" class="ai responsive-img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tool6 col s6 m3 l3 xl3">
+                                            <div class="donut-chart chart1">
+                                                <div class="quad one "></div>
+                                                <div class="quad two"></div>
+                                                <div class="quad three"></div>
+                                                <div class="quad four"></div>
+                                                <div class="quad top"></div>
+                                                <div class="chart-center">
+                                                    <img src="images\sketchup.svg" alt="SketchUp Icon" class="ai responsive-img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tool7 col s6 m3 l3 xl3">
+                                            <div class="donut-chart chart1">
+                                                <div class="quad one "></div>
+                                                <div class="quad two"></div>
+                                                <div class="quad three"></div>
+                                                <div class="quad four"></div>
+                                                <div class="quad top"></div>
+                                                <div class="chart-center">
+                                                    <img src="images\Icon 3ds-max.svg" alt="3DS Max Icon" class="ai responsive-img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tool8 col s6 m3 l3 xl3">
+                                            <div class="donut-chart chart1">
+                                                <div class="quad one "></div>
+                                                <div class="quad two"></div>
+                                                <div class="quad three"></div>
+                                                <div class="quad four"></div>
+                                                <div class="quad top"></div>
+                                                <div class="chart-center">
+                                                    <img src="images\Icon vray.svg" alt="Vray Icon" class="ai responsive-img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Close</a>
+                        </div>
+                    </section>
+                    <!--tablet and desktop-->
+                    <!--tablet and desktop-->
+
+
+
+                </section>
+
+            </section>
+
+            <!--section divider-->
+            <div class="section-divider"></div>
+
+            <!--services-->
+            <section id="services">
+                <div class="services-title card valign-wrapper">
+                    <h2>Services</h2>
+                </div>
+
+
+                <div class="services-title-q card center-align hide-on-small-only">
+                    <h3 class="center-align">What can I do for you?</h3>
+                </div>
+                <div class="services-panels valign-wrapper row">
+
+                    <div class="panel-webdev  serv-panel col s12 m6 l4 xl4">
+
+                        <div class="serv-img card waves-effect waves-block waves-light">
+                            <img class="activator" src="images\web design icon-no bckg.svg">
+                        </div>
+
+                        <div class="card-content">
+                            <h5 class="card-title activator grey-text text-darken-4 center-align">Web & graphic design</h5>
+                            <p class="center-align"><a href="#work">See projects</a></p>
+                        </div>
+
+                    </div>
+                    <div class="serv-panel panel-webdev col s12 m6 l4 xl4">
+                        <div class="serv-img card waves-effect waves-block waves-light">
+                            <img class="activator" src="images\web dev icon-no bckg.svg">
+                        </div>
+                        <div class="card-content">
+                            <h5 class="card-title activator grey-text text-darken-4 center-align">Web development</h5>
+                            <p class="center-align"><a href="#">See projects</a></p>
+                        </div>
+                    </div>
+                    <div class="serv-panel panel-ctw col s12 m6 l4 xl4">
+                        <div class="serv-img card waves-effect waves-block waves-light">
+                            <img class="activator" src="images\content writing icon-no bckg.svg">
+                        </div>
+                        <div class="card-content">
+                            <h5 class="card-title activator grey-text text-darken-4 center-align">Content writing</h5>
+                            <p class="center-align"><a href="#">See projects</a></p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </section>
+            <!--section divider-->
+            <div class="section-divider"></div>
+            <!--work-->
+            <section id="work" class="row card">
+                <div class="work-title title col s12 m6 l4 valign-wrapper center-align">
+                    <h2>Work</h2>
+                </div>
+                <div class="work-content content col s12 m6 l8 xl8">
+                    <div class="row grid">
+                        <!--project1-->
+                        <div id="project1" class="card sticky-action col s12 m12 l12">
+                            <div class="card-image valign-wrappe waves-effect waves-block waves-light">
+                                <video class="activator responsive-video" width="auto" height="auto" autoplay loop>
+                                <source src="images\monalisa vid.mp4"> Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4 center-align">Pixel Art Maker<i class="material-icons right">more_vert</i></span>
+                                <div class="card-action">
+                                    <a href="https://codepen.io/ozana-buljan/full/YeyxNQ/">Game live</a>
+                                </div>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Pixel Art Maker<i class="material-icons right">close</i></span>
+                                <p>One day (soon hopefully), here will be written something sensible about this project!</p>
+                                <p>Thank you for your patience!</p>
+                            </div>
+                        </div>
+                        <!--project2-->
+                        <div id="project2" class="card sticky-action col s12 m12 l12">
+                            <div class="card-image valign-wrappe waves-effect waves-block waves-light">
+                                <img class="activator img-responsive" src="images\placeholder-project-amy.png">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4 center-align">Amy Winehouse Tribute Website<i class="material-icons right">more_vert</i></span>
+                                <div class="card-action">
+                                    <a href="https://codepen.io/ozana-buljan/full/ddvvgq/">Web live</a>
+                                </div>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Amy Winehouse Tribute Website<i class="material-icons right">close</i></span>
+                                <p>One day (soon hopefully), here will be written something sensible about this project!</p>
+                                <p>Thank you for your patience!</p>
+                            </div>
+                        </div>
+                        <!--project3-->
+                        <div id="project3" class="card sticky-action col s12 m12 l12">
+                            <div class="card-image valign-wrappe waves-effect waves-block waves-light">
+                                <img class="activator" src="images\project3-no-bckg.png">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4 center-align">Case study: Sidebar menu with dropdown & icons<i class="material-icons right">more_vert</i></span>
+                                <div class="card-action">
+                                    <a href="https://codepen.io/ozana-buljan/full/YEvgZQ/">Web live</a></div>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Case study: Sidebar menu with dropdown & icons<i class="material-icons right">close</i></span>
+                                <p>One day (soon hopefully), here will be written something sensible about this project!</p>
+                                <p>Thank you for your patience!</p>
+                            </div>
+                        </div>
+                        <!--project4-->
+                        <div id="project4" class="card sticky-action col s12 m12 l12">
+                            <div class="card-image valign-wrappe waves-effect waves-block waves-light">
+                                <img class="activator" src="images\zoolander badge.PNG">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4 center-align">Case Study: Social profile badge<i class="material-icons right">more_vert</i></span>
+                                <div class="card-action">
+                                    <a href="https://codepen.io/ozana-buljan/full/eeKbwV/">Web live</a></div>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Case Study: Social profile badge<i class="material-icons right">close</i></span>
+                                <p>One day (soon, hopefully), here will be written something sensible about this project!</p>
+                                <p>Thank you for your patience!</p>
+                            </div>
+                        </div>
+                        <!--project5-->
+                        <div id="project5" class="card sticky-action col s12 m12 l12">
+                            <div class="card-image valign-wrappe waves-effect waves-block waves-light">
+                                <img class="activator" src="images\project-5-grid-layout.png">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4 center-align">Responsive CSS grid layout<i class="material-icons right">more_vert</i></span>
+                                <div class="card-action">
+                                    <a href="https://codepen.io/ozana-buljan/full/GOBjGa/">Web live</a>
+                                </div>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Responsive CSS grid layout<i class="material-icons right">close</i></span>
+                                <p>One day (soon, hopefully), here will be written something sensible about this project!</p>
+                                <p>Thank you for your patience!</p>
+                            </div>
+                        </div>
+                        <!--project6-->
+                        <div id="project6" class="card sticky-action col s12 m12 l12">
+                            <div class="card-image valign-wrappe waves-effect waves-block waves-light">
+                                <img class="activator" src="images\project6-no-bckg.png">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4 center-align">Print & Web CV<i class="material-icons right">more_vert</i></span>
+                                <div class="card-action"><a href="https://nikolatomaskinesio.wixsite.com/cv2017">Web live</a>
+                                </div>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Print & Web CV: Nikola Tomas<i class="material-icons right">close</i></span>
+                                <p>One day (soon, hopefully), here will be written something sensible about this project!</p>
+                                <p>Thank you for your patience!</p>
+                            </div>
+                        </div>
+                        <!--project7-->
+                        <div id="project7" class="card sticky-action col s12 m12 l12">
+                            <div class="card-image valign-wrappe waves-effect waves-block waves-light">
+                                <img class="activator" src="images\project7-no-bckg.png">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4 center-align">Case study: A Blog<i class="material-icons right">more_vert</i></span>
+                                <div class="card-action">
+                                    <a href="https://codepen.io/ozana-buljan/full/qVyPBQ/">Web live</a>
+                                </div>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Case study: A Blog<i class="material-icons right">close</i></span>
+                                <p>One day (soon, hopefully), here will be written something sensible about this project!</p>
+                                <p>Thank you for your patience!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--section divider-->
+            <div class="section-divider"></div>
+
+            <!--blog-->
+            <section id="blog">
+                <div class="blog-title card valign-wrapper">
+                    <h2>Journal</h2>
+                </div>
+
+                <div class="blog-title-q card center-align hide-on-small-only">
+                    <h3 class="center-align">See what I'm up to</h3>
+                </div>
+
+                <div class="blog-content grid">
+
+                    <div class="card sticky-action blog-ent-2 col s12 m16">
+                        <div class="card-image valign-wrappe waves-effect waves-block waves-light">
+                            <img class="activator" src="images\women power.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4 center-align">2018 International Women’s Day: more power to female founders<i class="material-icons right">more_vert</i></span>
+                            <div class="card-action">
+                                <a href="http://10vorne.it/international-womens-day/">go to the article</a>
+                            </div>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">2018 International Women’s Day: more power to female founders<i class="material-icons right">close</i></span>
+                            <p>To celebrate International Women’s Day on 8 March, we explored what means to be a female entrepreneur in a new business environment of ever-booming startup ventures. Despite the perception that gender gap is closing faster than ever – reality, supported by a number of studies, is quite different. There are still hurdles based on gender imparity which businesswomen need to overcome. Studies claim this transition will take over two centuries! Therefore, if we want to see positive changes during our lifetime; we need to act now.</p>
+                            <p>This year's International Women's Day's Campaign is launched under a slogan #PressforProgress. Now, more than ever, as they state, there is a strong call-to-action fueled by global activism, to press forward and progress gender parity. That's why we delved into the reasoning behind, often criticized, fight for gender equality and tried to offer women's perspective on their business reality.</p>
+                        </div>
+                    </div>
+
+                    <div class="card sticky-action blog-ent-2 col s12 m16">
+                        <div class="card-image valign-wrapper waves-effect waves-block waves-light">
+                            <img class="activator" src="images\my-workspace-(png).png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4 center-align">Making of Pixel Art Maker<i class="material-icons right">more_vert</i></span>
+                            <div class="card-action">
+                                <a href="https://discussions.udacity.com/t/creative-process-of-making-my-pixel-art-maker-illustrated/576284">go to the article</a>
+                            </div>
+                        </div>
+                        <div class="card-reveal valign-wrapper">
+                            <span class="card-title grey-text text-darken-4">Making of Pixel Art Maker<i class="material-icons right">close</i></span>
+                            <p>say something I'm giving up on you</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </section>
+            <!--section divider-->
+            <div class="section-divider"></div>
+
+            <!--section divider-->
+            <div class="posts-button">
+                <a href="#no-blog-yet" class="waves-effect waves-light btn modal-trigger grey darken-3">See all posts</a>
+            </div>
+            <!--section divider-->
+            <div class="section-divider"></div>
+
+            <!-- TEMPORARY: Modal - Notice  -->
+            <div id="no-blog-yet" class="modal">
+                <div class="modal-content">
+                    <h4>BLOG (STILL) UNDER CONSTRUCTION</h4>
+                    <p>Thank you for stepping by, though.</p>
+                    <p>Please, have a meme as an apology</p>
+                    <img src="images\Under construction.jpg" class="logo-img img-responsive" alt="Under construction meme">
+
+                    <p>Hope to see you soon.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Okay</a>
+                </div>
+            </div>
+            <!--section divider-->
+            <div class="section-divider">
+            </div>
+        </main>
+        <!--FAB: Social-->
+        <div class="fixed-action-btn">
+            <a class="btn-floating btn-large  grey darken-3">
+      <i class="material-icons">person_outline</i>
+    </a>
+            <ul>
+                <li><a href="https://github.com/ozana-buljan" class="btn-floating  grey darken-2"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                <li><a href="https://codepen.io/ozana-buljan/" class="btn-floating grey darken-2"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/ozana-buljan/" class="btn-floating grey darken-2"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                <li><a href="https://plus.google.com/u/0/+OzanaBuljan" class="btn-floating grey darken-2"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.facebook.com/ozana.buljan" class="btn-floating grey darken-2"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.instagram.com/ozana_buljan" class="btn-floating grey darken-2"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+
+            </ul>
+        </div>
+        <!--FOOTER-->
+        <footer>
+            <!--contact-->
+            <section id="contact" class="row">
+                <div class="contact-title card col s12 m6 l4 xl4 valign-wrapper center-align">
+                    <h2>Connect</h2>
+                </div>
+
+                <div class="contact-title-q card col s12 pull-m1 m6 pull-l1 l8 pull-xl1 xl8 center-align hide-on-small-only">
+
+                    <h3 class="center-align">Let's get in touch</h3>
+
+                </div>
+                <div class="contact-content col s12 m6 l8">
+                    <div class="contact-mail center-align ">
+                        <p>ozana.buljan@gmail.com</p>
+                        <!-- Modal Trigger -->
+                        <a href="#modal1" class="btn grey darken-3 waves-effect waves-light btn modal-trigger"><i class="material-icons">email</i></a>
+
+
+                    </div>
+                    <div class="contact-phone center">
+                        <p>Tap to call me!</p>
+                        <a href="tel:+43-670-000-0000" class="btn  grey darken-3"><i class="material-icons">phone_iphone</i>+43 670 xxx xxxx</a>
+                    </div>
+
+                    <div class="contact-address center">
+                        <p><i class="material-icons">location_on</i></p>
+                        <h5>Bregenz</h5>
+                        <h6>Vorarlberg, Austria</h6>
+                    </div>
+
+                    <div id="googleMap" class="col">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43121.85550588659!2d9.70307578962919!3d47.50713269851301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479b0d620e6982ef%3A0xbf6aa7993530ff24!2sBregenz!5e0!3m2!1sen!2sat!4v1520519650325" class="card" width="auto" height="auto" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+
+
+                    <div class="contact-form">
+
+
+                        <!-- Modal Structure -->
+                        <div id="modal1" class="modal">
+                            <div class="modal-content">
+                                <h4>Let me hear your thoughts!</h4>
+                                <div class="row">
+                                    <form method="post" action="send_mail.php" class="col s12">
+                                        <div class="row">
+                                            <div class="input-field col s6">
+                                                <input id="first_name" type="text" class="validate ">
+                                                <label for="first_name">First Name</label>
+                                            </div>
+                                            <div class="input-field col s6">
+                                                <input id="last_name" type="text" class="validate">
+                                                <label for="last_name">Last Name</label>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row">
+                                            <div class="input-field col s12">
+                                                <input id="email" type="email" class="validate">
+                                                <label for="email">Email</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col s12">
+                                                <label for="subject">Subject</label>
+                                            </div>
+                                            <div class="col s12">
+                                                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <input type="submit" value="Submit" class="btn  grey darken-3">
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Close</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--credits-->
+            <section id="impressum" class="footer-copyright row">
+
+                <div class="social-buttons-foot right col s12 m12  l8 xl8 right-align">
+                    <a href="https://github.com/ozana-buljan" class="btn-flat"><i class="fa fa-github" aria-hidden="true"></i></a>
+                    <a href="https://codepen.io/ozana-buljan/" class="btn-flat"><i class="fa fa-codepen" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/ozana-buljan/" class="btn-flat"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="https://plus.google.com/u/0/+OzanaBuljan" class="btn-flat"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                    <!--section divider-->
+                    <div class="divider hide-on-med-and-up">
+                    </div>
+                </div>
+                <p class="col s12 m12 l4 xl4"> ©2018 Ozana Buljan</p>
+            </section>
+
+
+        </footer>
+    </div>
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!-- Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+    <!-- Compiled and minified JavaScript for Materialize -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/designs.js"></script>
+
+</body>
+
+</html>
